@@ -1,0 +1,32 @@
+@import '../abstract/_variaveis'
+.conteudo-game-placar
+    display: grid
+    grid-template-columns: repeat(4, 22%) // vai variar de acordo com a quantidade de players
+    justify-content: space-around
+    margin-top: 1em
+    div
+        box-shadow: 0 0 3px 1px $preto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        padding: .2em
+        height: fit-content
+        white-space: nowrap
+        color: $branco
+        text-shadow: 1px 1px 2px $preto
+        &:nth-child(1)
+            background-color: red
+        &:nth-child(2)
+            background-color: orange
+        &:nth-child(3)
+            background-color: green
+        &:nth-child(4)
+            background-color: blue
+        p
+            &:first-child
+                font-size: .9em
+            &:last-child
+                font-size: 3em
+                font-family: $fonte-placar

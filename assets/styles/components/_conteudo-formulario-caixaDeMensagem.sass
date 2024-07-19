@@ -1,0 +1,30 @@
+@import '../abstract/_variaveis'
+.conteudo-formulario-caixaDeMensagem
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 80%
+    height: fit-content
+    gap: 1em
+    background-color: red
+    padding: .5em
+    border-radius: 12px
+    background-color: $verde-1
+    box-shadow: 2px 2px 4px 2px $preto
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .conteudo-formulario-caixaDeMensagem-mensagem
+        font-size: 1.2em
+        text-align: center
+        color: $branco
+        text-shadow: 1px 1px 2px $preto
+    .conteudo-formulario-caixaDeMensagem-botao
+        width: 100%
+        font-size: 1.4em
+        font-weight: bold
+        padding: .2em 0
+        background-color: $azul-escuro
+        color: $branco
+        text-shadow: 1px 1px 2px $preto

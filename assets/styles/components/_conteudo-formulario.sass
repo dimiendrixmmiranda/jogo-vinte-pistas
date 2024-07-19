@@ -1,0 +1,121 @@
+@import '../abstract/_variaveis'
+.conteudo-formulario
+    background-color: $azul-escuro
+    max-width: 95%
+    margin: 0 auto
+    padding: .5em
+    color: $branco
+    fieldset
+        border: none
+    .conteudo-formulario-categoria
+        display: grid
+        grid-template-columns: repeat(3, 30%)
+        gap: .2em
+        justify-content: space-around
+        .conteudo-formulario-categoria-titulo
+            font-size: 1.3em
+            font-weight: bold
+            grid-column: 1/4
+            margin-bottom: .4em
+        div
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: .2em
+            row-gap: .2em
+            label
+                text-transform: uppercase
+                font-weight: bold
+                font-size: .9em
+            input
+                appearance: none
+                border: solid 1px $preto
+                width: 100%
+                height: 30px
+                border-radius: 6px
+                background-color: $bege
+                &:checked
+                    background-color: $verde-2
+    .conteudo-formulario-dificuldade
+        display: grid
+        grid-template-columns: repeat(3, 30%)
+        gap: .2em
+        justify-content: space-around
+        margin-top: 1em
+        .conteudo-formulario-dificuldade-titulo
+            font-size: 1.3em
+            font-weight: bold
+            grid-column: 1/4
+        div
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: .2em
+            row-gap: .2em
+            label
+                text-transform: uppercase
+                font-weight: bold
+                font-size: .9em
+            input
+                appearance: none
+                border: solid 1px $preto
+                width: 100%
+                height: 30px
+                border-radius: 6px
+                background-color: $bege
+                &:checked
+                    background-color: $verde-2
+    .conteudo-formulario-players
+        display: grid
+        width: 100%
+        grid-template-columns: repeat(4, 22%)
+        justify-content: space-around
+        margin-top: 1em
+        .conteudo-formulario-players-titulo
+            font-size: 1em
+            font-weight: bold
+            grid-column: 1/5
+            white-space: nowrap
+        div
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: .5em
+            justify-self: center
+            align-self: center
+            width: 100%
+            height: 100%
+            row-gap: .2em
+            label
+                text-transform: uppercase
+                font-weight: bold
+                font-size: .65em
+                white-space: nowrap
+            input
+                appearance: none
+                border: solid 1px $preto
+                width: 80%
+                height: 20px
+                border-radius: 6px
+                background-color: $bege
+                &:checked
+                    background-color: $verde-2
+    .conteudo-formulario-btnIniciarJogo
+        display: flex
+        width: 100%
+        justify-content: center
+        align-items: center
+        font-size: 1.5em
+        gap: .5em
+        text-transform: uppercase
+        font-weight: bold
+        padding: .2em 0
+        margin-top: .4em
+        border-radius: 20px
+        background-color: $verde-1
+        color: $branco
+        letter-spacing: 2px
+        text-shadow: 2px 2px 3px $preto
