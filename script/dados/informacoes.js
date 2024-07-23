@@ -4,12 +4,25 @@ import { jogadores } from "./jogador.js";
 import { selecoes } from "./selecao.js";
 import { clubes } from "./clube.js";
 
-const arrayDeInformacoes = [
-    anos,
-    estadios,
-    jogadores,
-    selecoes,
-    clubes
+export const arrayDeInformacoes = [
+    {
+        categoria: "ano", 
+        array: anos
+    },
+    {
+        categoria: "estadio", 
+        array: estadios
+    },
+    {
+        categoria: "jogador", 
+        array: jogadores
+    },
+    {
+        categoria: "selecao", 
+        array: selecoes
+    },
+    {
+        categoria: "clube", 
+        array: clubes
+    },
 ]
-
-console.log(arrayDeInformacoes)

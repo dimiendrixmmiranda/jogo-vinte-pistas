@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <header class="cabecalho">
+    <header class="cabecalho" id="topo">
         <a href="#" class="cabecalho-link">
             <h1>Jogo das 20 pistas</h1>
         </a>
     </header>
-    <main class="conteudo">
+    <main class="conteudo" id="conteudoGame">
         <form class="conteudo-formulario" id="formularioDeInformacoes">
             <fieldset class="conteudo-formulario-categoria">
                 <label class="conteudo-formulario-categoria-titulo">Escolha a categoria:</label>
@@ -64,176 +64,27 @@
             <fieldset class="conteudo-formulario-players">
                 <label class="conteudo-formulario-players-titulo">Escolha a quantidade de players:</label>
                 <div>
-                    <label for="1player">1 Player</label>
-                    <input type="radio" name="quantidadeDePlayers" id="1player">
+                    <label for="1">1 Player</label>
+                    <input type="radio" name="quantidadeDePlayers" id="1">
                 </div>
                 <div>
-                    <label for="2player">2 Players</label>
-                    <input type="radio" name="quantidadeDePlayers" id="2player">
+                    <label for="2">2 Players</label>
+                    <input type="radio" name="quantidadeDePlayers" id="2">
                 </div>
                 <div>
-                    <label for="3player">3 Players</label>
-                    <input type="radio" name="quantidadeDePlayers" id="3player">
+                    <label for="3">3 Players</label>
+                    <input type="radio" name="quantidadeDePlayers" id="3">
                 </div>
                 <div>
-                    <label for="4player">4 Players</label>
-                    <input type="radio" name="quantidadeDePlayers" id="4player">
+                    <label for="4">4 Players</label>
+                    <input type="radio" name="quantidadeDePlayers" id="4">
                 </div>
             </fieldset>
             <button type="submit" class="conteudo-formulario-btnIniciarJogo" id="btnIniciarJogo">Iniciar Game <i
                     class="fa-solid fa-gamepad"></i></button>
         </form>
-        <div class="conteudo-game">
-            <div class="conteudo-game-placar">
-                <div>
-                    <p class="player">Player 1</p>
-                    <p class="placar">00</p>
-                </div>
-                <div>
-                    <p class="player">Player 2</p>
-                    <p class="placar">00</p>
-                </div>
-                <div>
-                    <p class="player">Player 3</p>
-                    <p class="placar">00</p>
-                </div>
-                <div>
-                    <p class="player">Player 4</p>
-                    <p class="placar">00</p>
-                </div>
-            </div>
-            <form class="conteudo-game-form">
-                <input type="text" name="inputChute" id="inputChute" placeholder="Que tal arriscar um chute?">
-                <div>
-                    <label for="inputChute">Que tal um chute?</label>
-                </div>
-                <button type="submit">Arriscar!</button>
-            </form>
-            <div class="conteudo-game-dicas">
-                <div class="conteudo-game-dicas-resposta">
-                    <p>Cristiano Ronaldo</p>
-                </div>
-                <div class="conteudo-game-dicas-categoria">
-                    <p>Jogadores</p>
-                </div>
-                <ul class="conteudo-game-dicas-lista">
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                    <li class="conteudo-game-dicas-lista-item">
-                        <div class="numero-dica">1</div>
-                        <div class="container-dica">
-                            <p>Nascido em 5 de fevereiro de 1985.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <div class="conteudo-game" id="conteudoGame"></div>
+        <a href="#topo" class="conteudo-ancora">Voltar ao Topo <i class="fa-solid fa-arrow-up"></i></a>  
     </main>
     <footer class="rodape">
         <p>Projeto idealizado e desenvolvido por <strong>Dimi Endrix Martins Miranda</strong> utilizando HTML, CSS e

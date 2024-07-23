@@ -5,7 +5,7 @@ export const jogadores = []
 selecionarNovaAlternativa(
     jogadores,
     'Kylian Mbappé',
-    'jogadores',
+    'jogador',
     [
         "Joga como atacante no Paris Saint-Germain.",
         "Nascido em 20 de dezembro de 1998.",
@@ -27,5 +27,62 @@ selecionarNovaAlternativa(
         "+",
         "Recebeu várias vezes o prêmio de Jogador do Mês da Ligue 1.",
         "Um dos principais artilheiros do PSG em competições europeias."
-    ]
+    ],
+    'medio',
+)
+selecionarNovaAlternativa(
+    jogadores,
+    'Cristiano Ronaldo',
+    'jogador',
+    [
+        "Ele é um dos maiores artilheiros da história do futebol.",
+        "Nascido em Portugal.",
+        "Já jogou pelo Manchester United.",
+        "Ele é frequentemente comparado a Lionel Messi.",
+        "+",
+        "Ele ganhou vários prêmios Ballon d'Or.",
+        "Jogou pelo Real Madrid.",
+        "-",
+        "Ele é conhecido por sua velocidade e habilidade de drible.",
+        "Jogou pela Juventus.",
+        "Ele é o capitão da seleção portuguesa.",
+        "Ele já quebrou inúmeros recordes de gols.",
+        "Ele começou sua carreira no Sporting CP.",
+        "+",
+        "Ele tem uma estátua em sua homenagem na Ilha da Madeira.",
+        "Jogou pelo Al Nassr na Arábia Saudita.",
+        "Ele é conhecido por seu rigoroso regime de treino.",
+        "-",
+        "Ele é um dos atletas mais seguidos nas redes sociais.",
+        "Ele ganhou a Eurocopa com Portugal em 2016."
+    ],
+    'facil'
+)
+selecionarNovaAlternativa(
+    jogadores,
+    'Messi',
+    'jogador',
+    [
+        "Ele é considerado um dos melhores jogadores de futebol de todos os tempos.",
+        "Nascido na Argentina.",
+        "Já jogou pelo FC Barcelona.",
+        "Ele é frequentemente comparado a Cristiano Ronaldo.",
+        "+",
+        "Ele ganhou vários prêmios Ballon d'Or.",
+        "-",
+        "Ele é conhecido por sua habilidade excepcional de drible.",
+        "Ele é o capitão da seleção argentina.",
+        "Ele já quebrou inúmeros recordes de gols.",
+        "Ele começou sua carreira no Newell's Old Boys.",
+        "+",
+        "Ele tem uma estátua em sua homenagem em Buenos Aires.",
+        "Ele ganhou a Copa América com a Argentina em 2021.",
+        "Ele é conhecido por sua visão de jogo e capacidade de passe.",
+        "-",
+        "Ele é um dos atletas mais seguidos nas redes sociais.",
+        "Ele é baixinho em comparação a muitos outros jogadores famosos.",
+        "Ele ganhou a Copa do Mundo com a Argentina em 2022.",
+        "Ele tem uma marca própria chamada The Messi Store."
+    ],
+    'facil'
 )

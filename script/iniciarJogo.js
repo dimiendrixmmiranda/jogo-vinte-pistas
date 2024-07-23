@@ -1,4 +1,5 @@
 import { gerarCaixaDeMensagem } from "./criacao/gerarCaixaDeMensagem.js"
+import { gerarJogo } from "./criacao/gerarJogo.js"
 
 const formularioDeInformacoes = document.querySelector('#formularioDeInformacoes')
 formularioDeInformacoes.addEventListener('submit', (e) => {
@@ -33,7 +34,7 @@ formularioDeInformacoes.addEventListener('submit', (e) => {
             funcaoAuxiliarCaixaMensagem(e)
         })
     } else {
-        console.log('pode gerar o jogo')
+        gerarJogo(informacoes)
     }
 })
 

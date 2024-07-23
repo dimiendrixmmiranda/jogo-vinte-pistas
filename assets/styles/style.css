@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
   font-family: "DSDIGI";
   src: url("../fonts/ds-digit.ttf");
@@ -15,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +25,10 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+}
+
+input, button {
+  cursor: pointer;
 }
 
 @font-face {
@@ -246,7 +252,6 @@ body {
   width: 100%;
   max-width: 95%;
   margin: 0 auto;
-  display: none;
 }
 
 @font-face {
@@ -255,35 +260,35 @@ body {
 }
 .conteudo-game-placar {
   display: grid;
-  grid-template-columns: repeat(4, 22%);
   justify-content: space-around;
   margin-top: 1em;
 }
 .conteudo-game-placar div {
   box-shadow: 0 0 3px 1px #000;
+  margin: 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0.2em;
   height: -moz-fit-content;
   height: fit-content;
   white-space: nowrap;
   color: #fff;
   text-shadow: 1px 1px 2px #000;
+  transition: 0.6s ease;
 }
 .conteudo-game-placar div:nth-child(1) {
-  background-color: red;
+  background-color: #ee4848;
 }
 .conteudo-game-placar div:nth-child(2) {
-  background-color: orange;
+  background-color: #eee34a;
 }
 .conteudo-game-placar div:nth-child(3) {
-  background-color: green;
+  background-color: #39a839;
 }
 .conteudo-game-placar div:nth-child(4) {
-  background-color: blue;
+  background-color: #6354e7;
 }
 .conteudo-game-placar div p:first-child {
   font-size: 0.9em;
@@ -415,9 +420,31 @@ body {
   font-family: "DSDIGI";
   src: url("../fonts/ds-digit.ttf");
 }
+.conteudo-ancora {
+  display: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #141E46;
+  color: #fff;
+  padding: 0.3em 0.6em;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: 5%;
+  margin: 0em 5% 1.5em auto;
+  -moz-column-gap: 0.5em;
+       column-gap: 0.5em;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "DSDIGI";
+  src: url("../fonts/ds-digit.ttf");
+}
 .rodape {
   background-color: #141E46;
   color: #fff;
   padding: 0.5em;
   font-size: 1.1em;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

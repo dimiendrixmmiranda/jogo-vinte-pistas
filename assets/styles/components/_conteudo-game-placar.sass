@@ -1,29 +1,33 @@
 @import '../abstract/_variaveis'
 .conteudo-game-placar
     display: grid
-    grid-template-columns: repeat(4, 22%) // vai variar de acordo com a quantidade de players
     justify-content: space-around
     margin-top: 1em
     div
         box-shadow: 0 0 3px 1px $preto
+        margin: .5em
         display: flex
         flex-direction: column
         justify-content: center
         align-items: center
         text-align: center
-        padding: .2em
         height: fit-content
         white-space: nowrap
         color: $branco
         text-shadow: 1px 1px 2px $preto
+        transition: .6s ease
         &:nth-child(1)
-            background-color: red
+            background-color: $player1
+            // estilo de quanto o player estiver selecionado
+            // border: solid 2px $player1-selected
+            // scale: 1.1
+            // transition: .6s ease
         &:nth-child(2)
-            background-color: orange
+            background-color: $player2
         &:nth-child(3)
-            background-color: green
+            background-color: $player3
         &:nth-child(4)
-            background-color: blue
+            background-color: $player4
         p
             &:first-child
                 font-size: .9em
