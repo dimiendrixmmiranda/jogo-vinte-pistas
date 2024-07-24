@@ -7,6 +7,7 @@ export function gerarConteudoGamePlacar(informacoes){
         const player = gerarContainerPlayer(`Player ${i + 1}`)
         containerConteudoPlacar.appendChild(player)
     }
+    containerConteudoPlacar.querySelector('div').classList.add('active')
     return containerConteudoPlacar
 }
 

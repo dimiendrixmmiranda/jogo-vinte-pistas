@@ -38,7 +38,7 @@
         flex-direction: column
         gap: .4em
         .conteudo-game-dicas-lista-item
-            background-color: $verde-2
+            background-color: $verde-3
             padding: .2em
             font-size: .95em
             height: fit-content
@@ -46,6 +46,7 @@
             display: grid
             grid-template-columns: 30px 1fr
             gap: .3em
+            cursor: pointer
             .numero-dica
                 display: flex
                 justify-content: center
@@ -58,6 +59,9 @@
                 background-color: $branco
                 box-shadow: 0 0 2px 1px $preto
                 p
-                    display: none
                     line-height: 1.1
                     padding: .2em .4em 
+                    color: $branco
+                    text-shadow: 1px 1px 2px $preto
+                    display: none
+                    background-color: $verde-3

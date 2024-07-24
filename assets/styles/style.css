@@ -263,6 +263,11 @@ input, button {
   justify-content: space-around;
   margin-top: 1em;
 }
+.conteudo-game-placar .active {
+  border: solid 2px #be0909;
+  scale: 1.1;
+  transition: 0.6s ease;
+}
 .conteudo-game-placar div {
   box-shadow: 0 0 3px 1px #000;
   margin: 0.5em;
@@ -387,7 +392,7 @@ input, button {
   gap: 0.4em;
 }
 .conteudo-game-dicas .conteudo-game-dicas-lista .conteudo-game-dicas-lista-item {
-  background-color: #8DECB4;
+  background-color: #159749;
   padding: 0.2em;
   font-size: 0.95em;
   height: -moz-fit-content;
@@ -396,6 +401,7 @@ input, button {
   display: grid;
   grid-template-columns: 30px 1fr;
   gap: 0.3em;
+  cursor: pointer;
 }
 .conteudo-game-dicas .conteudo-game-dicas-lista .conteudo-game-dicas-lista-item .numero-dica {
   display: flex;
@@ -411,9 +417,12 @@ input, button {
   box-shadow: 0 0 2px 1px #000;
 }
 .conteudo-game-dicas .conteudo-game-dicas-lista .conteudo-game-dicas-lista-item .container-dica p {
-  display: none;
   line-height: 1.1;
   padding: 0.2em 0.4em;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  display: none;
+  background-color: #159749;
 }
 
 @font-face {

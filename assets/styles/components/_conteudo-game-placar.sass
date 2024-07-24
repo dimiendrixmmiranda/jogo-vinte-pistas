@@ -3,6 +3,10 @@
     display: grid
     justify-content: space-around
     margin-top: 1em
+    .active
+        border: solid 2px $player1-selected
+        scale: 1.1
+        transition: .6s ease
     div
         box-shadow: 0 0 3px 1px $preto
         margin: .5em
@@ -19,9 +23,6 @@
         &:nth-child(1)
             background-color: $player1
             // estilo de quanto o player estiver selecionado
-            // border: solid 2px $player1-selected
-            // scale: 1.1
-            // transition: .6s ease
         &:nth-child(2)
             background-color: $player2
         &:nth-child(3)

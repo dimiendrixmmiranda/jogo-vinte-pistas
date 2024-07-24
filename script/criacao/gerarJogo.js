@@ -1,3 +1,4 @@
+import { logicaDoJogo } from "../funcoes-adicionais/logicaDoJogo.js"
 import { sortearPalavra } from "../funcoes-adicionais/sortearPalavra.js"
 import { gerarContainerDicas } from "./gerarContainerDicas.js"
 import { gerarContainerFormularioChute } from "./gerarContainerFormularioChute.js"
@@ -16,4 +17,5 @@ export function gerarJogo(informacoes) {
     conteudoGame.appendChild(containerDicas)
     formularioDeInformacoes.setAttribute('style', 'display: none')
     ancora.setAttribute('style', 'display: flex')
+    logicaDoJogo(informacoes)
 }
